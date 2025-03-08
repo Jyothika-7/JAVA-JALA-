@@ -1,0 +1,14 @@
+class DefaultClass {
+    String name = "John"; 
+    int age = 25;        
+ void display() {
+        System.out.println("Name: " + name + ", Age: " + age);
+    }
+}
+public class DefaultAccessDemo {
+    public static void main(String[] args) {
+        DefaultClass obj = new DefaultClass();
+        System.out.println("Accessing default field: " + obj.name);
+        obj.display(); 
+    }
+}
