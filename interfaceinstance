@@ -1,0 +1,14 @@
+interface MyInterface {
+    void show();
+}
+class MyClass implements MyInterface {
+    public void show() {
+        System.out.println("Implemented Method: show()");
+    }
+}
+public class InterfaceDemo {
+    public static void main(String[] args) {
+        MyInterface obj = new MyClass(); 
+        obj.show(); 
+    }
+}
