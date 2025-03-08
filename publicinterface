@@ -1,0 +1,18 @@
+public interface MyInterface {
+    int VALUE = 100;  
+    String NAME = "John";
+ void display(); 
+}
+class MyClass implements MyInterface {
+    public void display() {
+        System.out.println("Implemented Method: display()");
+    }
+}
+public class InterfaceDemo {
+    public static void main(String[] args) {
+        MyClass obj = new MyClass();
+        obj.display(); 
+         System.out.println("VALUE: " + MyInterface.VALUE);
+        System.out.println("NAME: " + MyInterface.NAME);
+    }
+}
