@@ -1,0 +1,17 @@
+interface InterfaceA {
+    void show(); 
+}
+interface InterfaceB {
+    void show(); 
+}
+class MyClass implements InterfaceA, InterfaceB {
+    public void show() { 
+        System.out.println("Method show() implemented.");
+    }
+}
+public class MultipleInterfaceDemo {
+    public static void main(String[] args) {
+        MyClass obj = new MyClass();
+        obj.show(); 
+    }
+}
