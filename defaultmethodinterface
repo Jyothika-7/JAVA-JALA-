@@ -1,0 +1,14 @@
+interface MyInterface {
+    default void show() {  // Default method
+        System.out.println("Default Method: show()");
+    }
+}
+class MyClass implements MyInterface {
+    
+}
+public class DefaultMethodDemo {
+    public static void main(String[] args) {
+        MyClass obj = new MyClass();
+        obj.show(); 
+    }
+}
