@@ -1,0 +1,19 @@
+interface MyInterface {
+    void method1(); 
+    void method2();  
+abstract class MyClass implements MyInterface {
+    public void method1() {
+        System.out.println("Implemented Method: method1()");
+    }
+}
+class SubClass extends MyClass {
+    public void method2() {
+        System.out.println("Implemented Method: method2()");
+    }
+}
+public class InterfaceDemo {
+    public static void main(String[] args) {
+        MyClass obj = new SubClass(); 
+        obj.method1(); 
+    }
+}
