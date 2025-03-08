@@ -1,0 +1,14 @@
+interface MyInterface {
+    int VALUE = 100;
+class MyClass implements MyInterface {
+    void display() {
+        System.out.println("VALUE: " + VALUE);
+    }
+}
+public class InterfaceDemo {
+    public static void main(String[] args) {
+        MyClass obj = new MyClass();
+        obj.display();
+          System.out.println("Accessing directly: " + MyInterface.VALUE);
+    }
+}
