@@ -1,0 +1,16 @@
+interface MyInterface {
+    int PUBLIC_VALUE = 100;  
+    String NAME = "Interface Field";
+}
+class MyClass implements MyInterface {
+    void display() {
+        System.out.println("PUBLIC_VALUE: " + PUBLIC_VALUE);
+        System.out.println("NAME: " + NAME);
+    }
+}
+public class InterfaceFieldsDemo {
+    public static void main(String[] args) {
+        MyClass obj = new MyClass();
+        obj.display();
+    }
+}
