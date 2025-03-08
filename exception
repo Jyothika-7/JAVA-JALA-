@@ -1,0 +1,9 @@
+public class ExceptionExample {
+    static void throwException() throws ArithmeticException {
+        throw new ArithmeticException("This is an Arithmetic Exception");
+    }
+public static void main(String[] args) {
+        throwException(); 
+        System.out.println("This will not be printed.");
+    }
+}
