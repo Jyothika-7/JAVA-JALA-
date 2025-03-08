@@ -1,0 +1,10 @@
+import java.lang.reflect.Method;
+class Sample {
+    public void existingMethod() {}
+}
+public class NoSuchMethodExceptionDemo {
+    public static void main(String[] args) throws NoSuchMethodException {
+        Class<Sample> sampleClass = Sample.class;
+ Method method = sampleClass.getMethod("nonExistentMethod");
+    }
+}
