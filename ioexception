@@ -1,0 +1,9 @@
+import java.io.FileWriter;
+import java.io.IOException;
+public class IOExceptionDemo {
+    public static void main(String[] args) throws IOException {
+     FileWriter writer = new FileWriter("/restricted_folder/output.txt"); 
+        writer.write("This will fail.");
+        writer.close();
+    }
+}
