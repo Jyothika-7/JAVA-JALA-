@@ -1,0 +1,17 @@
+abstract class MyAbstractClass {
+    void nonAbstractMethod() { 
+        System.out.println("This is a non-abstract method.");
+    }
+}
+class MyClass extends MyAbstractClass {
+    void accessNonAbstract() {
+        MyAbstractClass obj = new MyClass();
+        obj.nonAbstractMethod();
+    }
+}
+public class AbstractDemo {
+    public static void main(String[] args) {
+        MyClass obj = new MyClass();
+        obj.accessNonAbstract();
+    }
+}
