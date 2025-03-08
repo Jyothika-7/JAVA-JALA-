@@ -1,0 +1,7 @@
+public class NumberFormatExceptionDemo {
+    public static void main(String[] args) {
+        String invalidNumber = "abc123";
+ int num = Integer.parseInt(invalidNumber); 
+ System.out.println("Converted number: " + num);
+    }
+}
